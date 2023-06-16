@@ -1,0 +1,492 @@
+/* Global Styles */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  background-image: url(https://i.pinimg.com/originals/e9/db/09/e9db09b6ff90a4b6cf6f5b01a118524f.gif);
+  color: #ffffff;
+  font-family: 'Metal Mania', cursive;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 90px;
+  background-attachment: fixed; /* Added property */
+}
+
+
+
+header {
+  background-color: transparent;
+  padding: 20px;
+  border-bottom: 1px solid #555;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+footer {
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Homepage Styles */
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+  transform: translateY(100%);
+  animation: wipeDown 0.5s forwards;
+}
+/* 
+@keyframes wipeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 1px solid #555;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.search-bar label {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.search-bar.clicked {
+  animation: wipeDown 0.5s forwards;
+}
+
+@keyframes wipeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.search-bar input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  margin-right: 10px;
+  background-color: transparent;
+  font-family: 'Metal Mania', cursive;
+  color: #fff;
+}
+
+.search-bar button[type="submit"] {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Metal Mania', cursive;
+  border-color: #fff;
+  border-radius: 5px;
+  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-prev,
+.carousel-next {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Metal Mania', cursive;
+  border-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+.search-bar button[type="submit"]:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.carousel-slide .carousel-pieces li img {
+  max-width: 800px; 
+  max-height: 1000px; 
+}
+.carousel-slide .artist-img {
+  width: 500px; 
+  height: 400px; 
+  translate: -800px;
+}
+
+
+
+.artist-img {
+  width: 1500px;
+  height: 1500px;
+  object-fit: cover;
+  margin-left: 1000px;
+}
+
+.artist-pieces li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+#artist-list {
+  list-style-type: none;
+}
+
+#artist-list li img {
+  width: 900px;
+  height: auto;
+  margin: 5px;
+  list-style-type: none;
+}
+
+#reset-button {
+  
+  background-color:transparent;
+  color: #fff;
+  padding: 10px 20px;
+  border-color: #ffffff;
+  border-radius: 5px;
+  font-family: 'Metal Mania', cursive;
+  margin-left: 10px;
+}
+
+#reset-button:hover {
+ 
+  background-color: #f4f4f4;
+  color: #000000;
+}
+
+/* Login Page Styles */
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color:transparent;
+  padding: 20px;
+  border-radius: 5px;
+  transform: translateY(-100%);
+  animation: wipeDown 0.5s forwards;
+  /* border: 1px solid #000000; */
+}
+
+@keyframes wipeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: -20px;
+  border-radius: 3px;
+  border-color: whitesmoke;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #fff;
+  height: 30px;
+  font-family: 'Metal Mania', cursive;
+}
+
+.login-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Metal Mania', cursive;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: rgb(255, 255, 255);
+  color:#000000
+}
+
+.button {
+  transition: transform 0.3s ease;
+}
+
+.button.clicked {
+  transform: scale(0.95);
+}
+
+.login-form p {
+  color: #fff;
+}
+
+.login-form a {
+  color: #fff;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+/* Signup Page Styles */
+
+.signup-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+  transform: translateY(-100%);
+  animation: wipeDown 0.5s forwards;
+}
+
+.signup-form h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border-color: whitesmoke;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Metal Mania', cursive;
+}
+
+.signup-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Metal Mania', cursive;
+}
+
+.signup-form button[type="submit"]:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.signup-form p {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.signup-form a {
+  color: #ffffff;
+}
+
+/* add artist styles */
+
+.add-artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  transform: translateY(-100%);
+  animation: wipeDown 0.5s forwards;
+}
+
+.add-artist h2 {
+  margin-bottom: 20px; 
+  margin-left: 85px;
+  font-family: 'Metal Mania', cursive;
+  color: #fff;
+}
+
+.add-artist label {
+  margin-bottom: 10px;
+  font-family: 'Metal Mania', cursive;
+  color: #fff;
+}
+
+#add-artist-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+#add-artist-form .form-row {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+#add-artist-form .form-row label {
+  width: 100px;
+}
+
+#add-artist-form .form-row input[type="text"],
+#add-artist-form .form-row textarea {
+  width: 300px;
+  background-color: transparent;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+  height: 50px;
+  font-family: 'Metal Mania', cursive;
+  color: #f4f4f4;
+}
+
+#add-artist-form button[type="submit"] {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin: 20px;
+  margin-left: 1000px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Metal Mania', cursive;
+}
+
+#add-artist-form button[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* 
+about page styles */
+
+.about-contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Metal Mania', cursive;
+  color: #ffffff;
+  transform: translateY(-100%);
+  animation: wipeDown 0.5s forwards;
+}
+
+.about-contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-contact p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-contact p.contact-info {
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.about-contact p.contact-info a {
+  color: #ffffff;
+  text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "tattoo-artist-finder",
+  "version": "1.0.0",
+  "description": "Tattoo Artist Finder is a web application that helps users find tattoo artists based on their preferences, location, and style. Whether you're looking for a specific tattoo style or searching for talented artists in your area, this app will connect you with the right artists.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.3"
+  }
+}

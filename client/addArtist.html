@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Tattoo Artist - Tatdood</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+    .artist-img {
+      max-width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+          <li><a href="index.html" class="logo">Tatdood</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="about.html">About & Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <section class="add-artist">
+        <h2>Add Your Own Tattoo Artist</h2>
+        <form id="add-artist-form">
+          <div class="form-row">
+            <label for="artist-name">Name:</label>
+            <input type="text" id="artist-name" name="artist-name" required>
+          </div>
+          <div class="form-row">
+            <label for="artist-location">State:</label>
+            <input type="text" id="artist-location" name="artist-location" required>
+          </div>
+          <div class="form-row">
+            <label for="artist-style">Style:</label>
+            <input type="text" id="artist-style" name="artist-style" required>
+          </div>
+          <div class="form-row">
+            <label for="artist-image">Image:</label>
+            <input type="text" id="artist-image" name="artist-image">
+          </div>
+          
+          <div class="form-row">
+            <label for="artist-availability">Availability:</label>
+            <input type="text" id="artist-availability" name="artist-availability" required>
+          </div>
+          <div class="form-row">
+            <label for="artist-pieces">Pieces:</label>
+            <input type="text" id="artist-pieces" name="artist-pieces" required>
+          </div>
+          <div class="form-row">
+            <label for="artist-description">About:</label>
+            <textarea id="artist-description" name="artist-description" required></textarea>
+          </div>
+          
+          <button type="submit">Submit</button>
+        </form>
+        
+      </section>
+      
+  </main>
+  <footer>
+    <p>&copy; 2023 Tatdood</p>
+  </footer>
+  <script src="addArtist.js"></script>
+</body>
+</html>
