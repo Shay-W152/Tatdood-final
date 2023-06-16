@@ -27,8 +27,8 @@ Tattoo Artist Finder is a web application that helps users find tattoo artists b
 3. Install the dependencies: `npm install`
 4. These are the keys you will be needing for the maps api and mongoDb api respecitvely 
      ```
-     MONGODB_URI = mongodb+srv://fwasil83:pFFAx4kG5oRSCmCG@cluster0.tll1tc2.mongodb.net/
-     GOOGLE_MAPS_API_KEY = AIzaSyA8iXfPCQk2kkHtMkN7aUENrwH4ZFSJvS0
+      MONGODB_URI=your_mongodb_uri
+     GOOGLE_MAPS_API_KEY=your_google_maps_api_key
      ```
 6. Open your browser and visit: `http://localhost:3001`
 
